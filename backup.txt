@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento: HTML5 -->
+<html lang="pt-BR">
+<!-- Início do documento HTML com idioma definido como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Define o conjunto de caracteres como UTF-8, permitindo acentuação -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura a visualização responsiva em dispositivos móveis -->
+
+  <title>Mobilidade Urbana no Espírito Santo – Notícias</title>
+  <!-- Título da página que aparece na aba do navegador e é usado por mecanismos de busca -->
+
+  <meta name="description" content="Notícias e iniciativas recentes sobre mobilidade urbana no Espírito Santo. Acompanhe projetos como Ciclovia da Vida, Transcol, Aquaviário, e muito mais.">
+  <!-- Descrição da página para SEO -->
+
+  <style>
+    /* Estilização global da página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    /* Estilo para o cabeçalho e rodapé */
+    header, footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Conteúdo principal centralizado e com padding */
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    /* Estilização de cada artigo de notícia */
+    article {
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Títulos principais */
+    h1, h2 {
+      color: #00695c;
+    }
+
+    /* Datas das notícias */
+    time {
+      display: block;
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    /* Estilo para a fonte da notícia */
+    .source {
+      font-size: 0.85em;
+      color: #888;
+    }
+
+    /* Div pulsante com data do dia - estilo */
+    .pulsante-data {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #009688;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(0, 150, 136, 0.5);
+      animation: pulse 2s infinite;
+      z-index: 9999;
+    }
+
+    /* Animação da div pulsante */
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 rgba(0, 150, 136, 0.7); }
+      70% { transform: scale(1.1); box-shadow: 0 0 20px rgba(0, 150, 136, 0.7); }
+      100% { transform: scale(1); box-shadow: 0 0 0 rgba(0, 150, 136, 0.7); }
+    }
+    #ads {
+  color: white;
+  font-size: large;
+  position: fixed;
+  bottom: 200px;
+  left: 20px; /* lado oposto da data */
+  background-color: #d62300;
+  border-radius: 8px;
+  border: none;
+  padding: 50px 66px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+  width: auto;
+  z-index: 9999;
+  animation: pulse-rapido 1s infinite; /* animação rápida */
+}
+
+/* Animação pulsante rápida */
+@keyframes pulse-rapido {
+  0% { transform: scale(1); box-shadow: 0 0 0 rgba(214, 35, 0, 0.7); }
+  50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(214, 35, 0, 0.8); }
+  100% { transform: scale(1); box-shadow: 0 0 0 rgba(214, 35, 0, 0.7); }
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho da página com título e subtítulo -->
+  <header>
+    <h1>🏙️ Mobilidade Urbana no Espírito Santo</h1>
+    <p>Notícias e iniciativas dos últimos 365 dias</p>
+    
+    <!-- Exibe a data atual com animação pulsante dentro do cabeçalho -->
+    <div class="pulsante-data" id="dataHoje"></div>
+  </header>
+
+  <!-- Conteúdo principal com artigos de notícias -->
+                 <main>
+                 <article>
+                <h2>Transcol testa ônibus elétrico em linhas metropolitanas</h2>
+                <time datetime="2025-05-28">28 de maio de 2025</time>
+                <p>
+                    O sistema Transcol iniciou testes com ônibus 100% elétrico em rotas de alto fluxo entre Cariacica e Vitória. O modelo, silencioso e sem emissões, possui autonomia de 250 km e foi bem recebido por usuários.
+                </p>
+                <p class="source">Fonte: Ceturb-ES / A Gazeta</p>
+                </article>
+
+                <article>
+                <h2>Vitória lança app para unificar modais de transporte</h2>
+                <time datetime="2025-06-05">05 de junho de 2025</time>
+                <p>
+                    A prefeitura de Vitória lançou o “Mobilidade VIX”, aplicativo que integra horários do Transcol, disponibilidade de bicicletas compartilhadas, rotas a pé e o sistema aquaviário, com foco em acessibilidade e otimização de deslocamentos.
+                </p>
+                <p class="source">Fonte: Prefeitura de Vitória</p>
+                </article>
+
+                <article>
+                <h2>Monitoramento por IA reduz atrasos em ônibus</h2>
+                <time datetime="2025-03-12">12 de março de 2025</time>
+                <p>
+                    A inteligência artificial adotada no Centro Integrado de Mobilidade de Vitória reduziu em 18% o número de atrasos no transporte coletivo, cruzando dados climáticos, trânsito e eventos em tempo real.
+                </p>
+                <p class="source">Fonte: Technibus</p>
+                </article>
+
+                <article>
+                <h2>Nova ciclovia intermunicipal entre Serra e Vitória</h2>
+                <time datetime="2025-02-08">08 de fevereiro de 2025</time>
+                <p>
+                    Foi inaugurada uma nova ciclovia de 6,3 km ligando os bairros Jardim Limoeiro (Serra) a São Pedro (Vitória), incentivando deslocamentos sustentáveis e seguros entre os municípios.
+                </p>
+                <p class="source">Fonte: Secretaria de Mobilidade da Serra</p>
+                </article>
+
+                <article>
+                <h2>Campanha incentiva uso do aquaviário com gratuidade aos domingos</h2>
+                <time datetime="2025-04-14">14 de abril de 2025</time>
+                <p>
+                    O governo do Estado lançou campanha “Navegar é Viver” oferecendo gratuidade no sistema aquaviário aos domingos, com o objetivo de estimular o uso e avaliar o impacto na redução do tráfego rodoviário.
+                </p>
+                <p class="source">Fonte: SEMOBI – Governo do ES</p>
+                </article>
+
+                            <!-- Notícia 1 -->
+                            <article>
+                            <h2>Tecnologia a serviço da mobilidade urbana</h2>
+                            <time datetime="2025-05-21">21 de maio de 2025</time>
+                            <p>A Ceturb-ES implementou um Centro Inteligente de Mobilidade...</p>
+                            <p class="source">Fonte: Technibus / Valeria Bursztein</p>
+                            </article>
+
+                            <!-- Notícia 2 -->
+                            <article>
+                            <h2>Projeto “Ciclovia da Vida” é finalista em premiação internacional</h2>
+                            <time datetime="2025-06-03">03 de junho de 2025</time>
+                            <p>O projeto de ampliação da Terceira Ponte...</p>
+                            <p class="source">Fonte: Diário do Transporte / Technibus</p>
+                            </article>
+
+                            <!-- Notícia 3 -->
+                            <article>
+                            <h2>Vitória sedia Fórum Nacional de Mobilidade Urbana</h2>
+                            <time datetime="2024-12-04">04–05 de dezembro de 2024</time>
+                            <p>A 119ª Reunião do Fórum Nacional de Mobilidade Urbana...</p>
+                            <p class="source">Fonte: Diário do Transporte / Em Dia ES</p>
+                            </article>
+
+                            <!-- Notícia 4 -->
+                            <article>
+                            <h2>Semobi anuncia edital e pagamento por aproximação no Aquaviário</h2>
+                            <time datetime="2025-05-06">06 de maio de 2025</time>
+                            <p>Foi lançado edital para ampliar a operação do sistema Aquaviário...</p>
+                            <p class="source">Fonte: SEMOBI – Governo do Espírito Santo</p>
+                            </article>
+
+                            <!-- Notícia 5 -->
+                            <article>
+                            <h2>Compartilhamento de veículos em condomínios capixabas</h2>
+                            <time datetime="2025-04-10">Abril de 2025</time>
+                            <p>Condomínios passaram a oferecer frota compartilhada 24h...</p>
+                            <p class="source">Fonte: Sustentabilidade Brasil</p>
+                            </article>
+
+                            <!-- Notícia 6 -->
+                            <article>
+                            <h2>Abrigos, bikes compartilhadas e plano de mobilidade em Vitória</h2>
+                            <time datetime="2025-01-01">2023–2025</time>
+                            <p>Vitória instalou ~269 novos abrigos, ampliou o sistema Bike Vitória...</p>
+                            <p class="source">Fonte: 027 Notícias</p>
+                            </article>
+                        </main>
+
+                        <!-- Rodapé da página -->
+                        <footer>
+                            <p>&copy;  – Portal de Mobilidade ES</p>
+                        </footer>
+
+                        <!-- Div pulsante com a data do dia (duplicada acidentalmente) -->
+                        <div class="pulsante-data" id="dataHoje"></div>
+                        <!-- OBS: Essa linha está repetida e deve ser removida, pois já existe dentro do <header> -->
+
+                        <!-- Script para exibir data atual na div pulsante -->
+                        <script>
+                            const hoje = new Date();
+                            const options = { day: '2-digit', month: 'long', year: 'numeric' };
+                            document.getElementById('dataHoje').textContent = hoje.toLocaleDateString('pt-BR', options);
+                        </script>
+<!---------------------propaganda-->
+<div id="ads">
+<a href="#" target="_blank" id="novo">
+    CONFERIR
+</a>
+<!-------------------------randomizandolinks-->
+<script>
+    const links=[
+        'https://videoshumors.netlify.app/',
+        'https://carrovideos.netlify.app/',
+        'https://espiritosantolinhadotempovideo.vercel.app/'
+    ];
+    function randomlink(arr){
+        return Math.floor(Math.random()* arr.length);
+    }
+    const escolhe=randomlink(links);
+    const escolhido=links[escolhe];
+    document.getElementById('novo').href=escolhido;
+</script>
+<!-------------------------randomizandolinks-->
+</div>
+</body>
+</html>
